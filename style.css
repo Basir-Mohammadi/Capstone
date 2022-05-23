@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    color: (var-color-white);
+}
+
+section {
+    padding: 6rem 0;
+}
+
+
+/* MOBILE VERSION*/
+
+@media screen and (max-width: 768px) {
+  
+    /* NAVBAR */
+    .nav-container {
+        position: absolute;
+    }
+
+    .nav_menu , #close-menu-btn {
+        display: none;
+    }
+
+    #close-menu-btn {
+        width: 40px;
+        height: 40px;
+    }
+    /* FIRST SECTION */
+
+    .container-intro {
+        position: relative;
+        margin-top: 0;
+        background-image: url("imgs/Website-background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 15px;
+    }
+
+    .project-head-title {
+        font-size: 25px;
+        color: crimson;
+        padding-top: 4.8rem;
+    }
+
+    .project-paragraph p {
+        border: solid 1px rgb(238, 228, 228);
+        padding: 2px;
+        margin: 30px auto;
+        text-align: center;
+        text-justify: auto;
+    }
+
+    .project-address h2 {
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .project-address address {
+        font-size: 15px;
+        padding-bottom: 30px;
+    }
+
+    /* SECTION TWO*/
+    .container-main-program {
+        background-image: url("imgs/program-bg.jpg");
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .container-main-program img {
+        width: 60px;
+        height: 60px;
+    }
+    .container-main-program h3 {
+        text-align: center;
+        color: white;
+    }
+
+    .line-main-program {
+        margin: 0 190px;
+        border: red 1px solid;
+        align-content: center;
+    }
+
+    .program-details {
+        background-color: #3c4049;
+        display: flex;
+        flex-direction: row;
+        margin: 30px 0;
+        font-size: 18px;
+        color: white;
+        padding: 30px 10px;
+    }
+
+    .program-details b {
+        color: red;
+        font-weight: bold;
+        padding: 5px 15px;
+        font-size: 20px;
+    }
+
+    .join-cc {
+        text-align: center;
+        background-color: #EC5242;
+        margin: 0 38px;
+        padding: 30px 0;
+        border-radius: 5%;
+        cursor: pointer;
+        color: white;
+        font-size: 20px;
+    }
+
+    .join-cc:hover {
+        background-color: #ee4c3a;
+    }
+
+
+    /* SPEAKERS SECTION*/
+
+    .speakers {
+        margin: 0;
+        padding: 40px;
+    }
+
+    .speakers img {
+        width: 120px;
+        height: 170px;
+    }
+
+    .line-speakers {
+        margin: 0 150px;
+        border: red 1px solid;
+        align-content: center;
+    }
+
+    .speakers h3 {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .speakers-details {
+        padding-top: 35px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .speakers-personal-details {
+        margin-left: 25px;
+    }
+
+    .speaker-name {
+        padding-bottom: 15px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .speakers > .more {
+        text-align: center;
+        border: 1px solid wheat;
+        margin-top: 25px;
+        padding: 15px 0;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 5%;
+    }
+}

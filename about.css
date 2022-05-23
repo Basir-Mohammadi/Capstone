@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    color: (var-color-white);
+}
+
+section {
+    padding: 6rem 0;
+}
+
+/* MOBILE VERSION*/
+
+@media screen and (max-width: 768px) {
+
+     /* FIRST SECTION */
+
+     .container-intro {
+        position: relative;
+        margin-top: 0;
+        background-image: url("imgs/Website-background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 15px;
+    }
+
+    .project-head-title {
+        font-size: 25px;
+        color: crimson;
+        padding-top: 4.8rem;
+        text-align: center;
+    }
+
+    .project-paragraph p {
+        border: solid 3px rgb(238, 228, 228);
+        padding: 2px;
+        margin: 30px auto;
+        text-align: center;
+        text-justify: auto;
+
+    }
+
+    .project-address h2 {
+        font-size: 35px;
+        font-weight: bold;
+        margin: 0 25px;
+        text-align: center;
+    }
+
+    .project-address address {
+        font-size: 15px;
+        padding-bottom: 30px;
+        text-align: center;
+        margin: 20px 25px;
+    }
+}
