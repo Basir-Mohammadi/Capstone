@@ -8,8 +8,10 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Lato", sans-serif;
     line-height: 1.7;
     color: (var-color-white);
 }
@@ -46,6 +48,7 @@ section {
         margin: 30px auto;
         text-align: center;
         text-justify: auto;
+        background-color: white;
 
     }
 
@@ -62,4 +65,153 @@ section {
         text-align: center;
         margin: 20px 25px;
     }
+
+    /* CONTAINER-ADVERTISE */
+
+    .container-advertise {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+    }
+
+    .text-advertise {
+        text-align: center;
+        font-weight: 200;
+    }
+
+    .global-logo img {
+        margin-top: 25px;
+        padding: 20px;
+        width: 380px;
+        height: 180px;
+        border: 2px solid whitesmoke;
+    }
+
+    /* PAST SUMMITS */
+
+    .container-past-summits {
+        border-top: 2px solid rgb(138, 132, 132);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text-past-summits {
+        text-align: center;
+        top: 2%;
+        width: 85%;
+    }
+
+    .line-main-program {
+        margin: 0 170px;
+        border: red 1px solid;
+        align-content: center;
+        margin-bottom: 15px;
+    }
+
+    .past-years-summits-1 , .past-years-summits-2 {
+        position: relative;
+        text-align: center;
+    }
+
+    .past-years-summits-1 img {
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+        margin: 15px auto;
+    }
+
+    .past-years-summits-1 h3 {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 40%;
+        left: 17%;
+        color: white;
+    }
+
+    .past-years-summits-1 h3 > b {
+        font-weight: bold;
+        font-size: 35px;
+    }
+
+    .past-years-summits-2 img {
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+        margin: 35px auto;
+    }
+
+    .past-years-summits-2 h3 {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 40%;
+        left: 13%;
+        color: white;
+    }
+
+    .past-years-summits-2 h3 > b {
+        font-weight: bold;
+        font-size: 35px;
+    }
+
+    /* PARTNERS */
+
+    .companies {
+        background-color: #272A31;   
+    }
+
+    .partners-company {
+        color: white;
+        text-align: center;
+        padding-top: 5%;
+        font-weight: 300;
+    }
+
+    .line-company-program {
+        margin: 0 210px;
+        border: red 1px solid;
+        align-content: center;
+        font-size: 35px;
+    }
+
+    .company-logos {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .second-logos {
+        justify-content: center;
+    }
+
+    .companies img {
+        width: 30%;
+        height: 30%;
+    }
+
+    /* FOOTER */
+
+    .address-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10%;
+    }
+
+    .address-footer img {
+        background-color: #272A31;
+        width: 50%;
+        border-radius: 5%;
+        margin-right: 6%;
+    }
+
+    .address-footer span {
+        font-weight: 200;
+    }
+
 }
