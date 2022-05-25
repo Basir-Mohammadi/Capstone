@@ -1,3 +1,5 @@
+
+
 const speakersDetails = [
     {
         image:'imgs/Acuff.jpg',
@@ -5,34 +7,34 @@ const speakersDetails = [
         positioin:'Leadership Expert; Inc. Top 100 Leadership Speaker; New York Times Best-Selling Author',
         background:'Founding Pastor, Fellowship Church; Founder & CEO, the Greatest Story, Inc.; President, Harambee Ministries;Board Member, Global Leadership Network; Author',
     },    {
-        image:'',
-        name:'',
-        positioin:'',
-        background:'',
+        image:'imgs/Stephanie-Chung.jpg',
+        name:'Stephanie Chung',
+        positioin:'Chief Growth Officer, Wheels Up; Former President, JetSuite; Advisory Council, National Business Aviation Association',
+        background:'Chief Growth Officer, Wheels Up; Former President, JetSuite; Advisory Council, National Business Aviation Association',
     },    {
-        image:'',
-        name:'',
-        positioin:'',
-        background:'',
+        image:'imgs/Sahar-Hashemi.jpg',
+        name:'Sahar Hasheni',
+        positioin:'Founder, Coffee Republic; Founder, Skinny Candy; Non-Executive Director, Scale Up Institute; Best-Selling Author',
+        background:'Founder, Coffee Republic; Founder, Skinny Candy; Non-Executive Director, Scale Up Institute; Best-Selling Author',
     },    {
-        image:'',
-        name:'',
-        positioin:'',
-        background:'',
+        image:'imgs/Lynsi-Snyder.jpg',
+        name:'Lynsi Snyder',
+        positioin:'Owner & President, In-N-Out Burger; Founder, Army of Love',
+        background:'Owner & President, In-N-Out Burger; Founder, Army of Love',
     },    {
-        image:'',
-        name:'',
-        positioin:'',
-        background:'',
+        image:'imgs/Johnny-C-Taylor-Jr.jpg',
+        name:'Johnny Taylor',
+        positioin:'President & CEO, SHRM, the Society for Human Resource Management; Former President & CEO, Thurgood Marshall College Fund; Best-Selling Author',
+        background:'President & CEO, SHRM, the Society for Human Resource Management; Former President & CEO, Thurgood Marshall College Fund; Best-Selling Author',
     },    {
-        image:'',
-        name:'',
-        positioin:'',
-        background:'',
+        image:'imgs/Andy-Stanley-2022.jpg',
+        name:'Andy Stanly',
+        positioin:'Founder & Pastor, North Point Ministries; Host, Your Move with Andy Stanley ; Best-Selling Author',
+        background:'Founder & Pastor, North Point Ministries; Host, Your Move with Andy Stanley ; Best-Selling Author',
     },
 ]
 
-function gnerateSpeaker({
+function generateSpeaker({
     image,name,positioin,background
 }){
     return `
@@ -54,11 +56,41 @@ function gnerateSpeaker({
 
 
 
-
-const speakersleft =document.querySelector ('.left');
+const speakersleft = document.querySelector ('.left');
 const speakersright =  document.querySelector ('.right');
 
-const speakerArr= speakersDetails.map((speaker) => gnerateSpeaker(speaker));
+const speakerArr= speakersDetails.map((speaker) => generateSpeaker(speaker));
 speakersleft.innerHTML=speakerArr.slice(0,3).join('');
 speakersright.innerHTML=speakerArr.slice(3, ).join('');
 
+
+// See More
+const speakerslist = document.querySelector ('.speakers');
+
+const seeMorebutton = document.createElement('div');
+seeMorebutton.classList.add('more');
+seeMorebutton.innerHTML = 'MORE <img src="imgs/dropdown.png" alt="">';
+speakerslist.append(seeMorebutton);
+
+const seeLessbutton = document.createElement('div');
+seeLessbutton.classList.add('less more');
+seeLessbutton.innerHTML = 'LESS <img src="imgs/dropdown.png" alt="">';
+speakerslist.append(seeLessbutton);
+seeLessbutton.style.display = 'none';
+
+const more = document.querySelector('.more');
+more.addEventListener('click', () => {
+  speakerslist.innerHTML = speakerArr.join('');
+  speakerslist.append(seeLessbutton);
+
+  seeLessbutton.style.display = 'flex';
+  seeMorebutton.style.display = 'none';
+});
+
+const less = document.querySelector('.less');
+less.addEventListener('click', () => {
+  speakerslist.innerHTML = speakerArr.slice(0, 2).join('');
+  speakerslist.append(seeMorebutton);
+  seeLessbutton.style.display = 'none';
+  seeMorebutton.style.display = 'flex';
+});
