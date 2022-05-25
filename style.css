@@ -22,8 +22,26 @@ section {
     padding: 6rem 0;
 }
 
+/* NAVBAR */
+
+.top-navbar ul{
+    background-color: #272A31;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: flex-end;
+    gap: 15px;
+    padding: 0.5% 13%;
+    align-items: center;
+}
+
+.top-navbar ul li {
+    cursor: pointer;
+}
+
 nav .nav-container {
-   align-items: center;
+    /* position: absolute; */
+    align-items: center;
 }
 
 .image-nav {
@@ -74,11 +92,18 @@ button i {
 .project-head-title  {
     color: #EC5242;
     font-size: 35px;
-    width: 60%;
+    width: 80%;
+    font-weight: 300;
+}
+
+.project-desc {
+    font-size: 4.7rem;
 }
 
 .project-paragraph p {
-    width: 60%;
+    width: 75%;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     border: 1px solid white;
     padding: 15px;
     margin-bottom: 15px;
@@ -88,11 +113,189 @@ button i {
     font-weight: 300;
 }
 
+/* SECTION TWO */
+
+.container-main-program {
+    background-image: url('imgs/program-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7%;
+}
+
+.container-main-program h3 {
+    margin-top: -50px;
+    color: white;
+    text-align: center;
+}
+
+.line-desk-program {
+    width: 45px;
+    border: red 1px solid;
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+.main-program-details {
+    display: flex;
+    flex-direction: row;
+}
+
+.program-details {
+    background-color: #3c4049;
+    padding: 30px 5px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.5rem;
+}
+
+.image-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-details h4 {
+    color: #eb4431;
+    font-size: 25px;
+}
+
+.image-details .details-image {
+  padding: 0 15px;
+  color: white;
+  font-weight: 400;
+}
+
+.program-details img {
+    width: 75px;
+}
+
+.join-cc {
+    color: white;
+    font-weight: 400;
+    margin-top: 65px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* THIRD SECTION */
+
+.speakers {
+    background-color: #e9ecf1;
+}
+
+.speakers h3 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.line-speakers {
+    margin: 0 40rem;
+    border: red 1px solid;
+    margin-bottom: 35px;
+}
+
+.speaker-image img{
+    width: 75px;
+}
+
+.all-left-right {
+    display: flex;
+    flex-direction: row;
+    margin: 0 140px;
+}
+
+.speakers-details {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.speakers-personal-details {
+    margin-left: 25px;
+}
+
+.speaker-name {
+    color: #050505;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.speaker-position {
+    color: rgb(218, 42, 42);
+    font-size: 17px;
+}
+
+.more {
+    display: none;
+}
+
+/* FOOTER */
+
+.companies {
+    background-color: #272A31;  
+    display: inline-block; 
+    width: 100%;
+}
+
+.partners-company {
+    color: rgb(250, 242, 242);
+    text-align: center;
+    padding-top: 5%;
+    font-weight: 300;
+    font-size: 3.1rem;
+}
+
+.line-company-program {
+    margin: 0 43rem;
+    border: red 1px solid;
+}
+
+.company-logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-logos img {
+    width: 15%;
+}
+
+/* FOOTER FOOOTER */
+
+.address-footer {
+    background-color: #ecedf1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.address-footer img {
+    width: 14%;
+    background-color: #81848b;
+}
+
+.address-footer span {
+    font-size: 20px;
+    font-weight: 200;
+    padding-top: 1.5%;
+}
+
+
 
 
 /* MOBILE VERSION*/
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   
     /* NAVBAR */
     nav button {
@@ -142,7 +345,6 @@ button i {
     .container-intro {
         position: relative;
         top: 0;
-       
         background-position-y: -45px;
         padding: 15px;
     }
@@ -159,12 +361,23 @@ button i {
         padding-top: 4.8rem;
     }
 
+    .project-desc {
+        width: 99%;
+        font-size: 2rem;
+    }
+
     .project-paragraph p {
+        /* background-color: white; */
         border: solid 1px rgb(238, 228, 228);
         padding: 2px;
+        width: 95%;
         margin: 30px auto;
         text-align: center;
         text-justify: auto;
+    }
+
+    .project-address {
+        text-align: center;
     }
 
     .project-address h2 {
@@ -178,54 +391,46 @@ button i {
     }
 
     /* SECTION TWO*/
+
     .container-main-program {
         background-image: url("imgs/program-bg.jpg");
         display: flex;
         flex-direction: column;
-        padding: 20px;
     }
 
-    .container-main-program img {
-        width: 60px;
-        height: 60px;
+    .main-program-details {
+        display: flex;
+        flex-direction: column;
     }
+
     .container-main-program h3 {
-        text-align: center;
-        color: white;
-    }
-
-    .line-main-program {
-        margin: 0 190px;
-        border: red 1px solid;
-        align-content: center;
+        margin-top: 20px;
+        
     }
 
     .program-details {
-        background-color: #3c4049;
         display: flex;
         flex-direction: row;
-        margin: 30px 0;
-        font-size: 18px;
-        color: white;
-        padding: 30px 10px;
+        padding: 10px 0;
+        margin: 5px -50px;
     }
 
-    .program-details b {
-        color: red;
-        font-weight: bold;
-        padding: 5px 15px;
-        font-size: 20px;
+    .image-details {
+        display: flex;
+        flex-direction: row;
+        margin: 0 10px;
     }
 
     .join-cc {
         text-align: center;
         background-color: #EC5242;
-        margin: 0 38px;
-        padding: 30px 0;
+        margin: 10px 20px;
+        padding: 30px 20px;
         border-radius: 5%;
         cursor: pointer;
         color: white;
         font-size: 20px;
+        text-decoration: none;
     }
 
     .join-cc:hover {
@@ -236,19 +441,7 @@ button i {
     /* SPEAKERS SECTION*/
 
     .speakers {
-        margin: 0;
-        padding: 40px;
-    }
-
-    .speakers img {
-        width: 120px;
-        height: 170px;
-    }
-
-    .line-speakers {
-        margin: 0 150px;
-        border: red 1px solid;
-        align-content: center;
+        background-color: white;
     }
 
     .speakers h3 {
@@ -257,31 +450,35 @@ button i {
         font-weight: bold;
     }
 
-    .speakers-details {
-        padding-top: 35px;
+    .line-speakers {
+        margin: 0 210px;
+        border: red 1px solid;
+    }
+
+    .all-left-right {
         display: flex;
-        flex-direction: row;
-    }
-
-    .speakers-personal-details {
-        margin-left: 25px;
-    }
-
-    .speaker-name {
-        padding-bottom: 15px;
-        font-size: 20px;
-        font-weight: bold;
+        flex-direction: column;
+        margin: 20px 20px;
     }
 
     .speakers > .more {
+        display: flex;
+        justify-content: center;
         text-align: center;
         border: 1px solid wheat;
-        margin-top: 25px;
+        margin: 0 25px;
         padding: 15px 0;
         font-weight: bold;
         cursor: pointer;
         border-radius: 5%;
     }
+
+    /* FOOTER */
+
+    .companies , .address-footer {
+        display: none;
+    }
+
 }
 
 

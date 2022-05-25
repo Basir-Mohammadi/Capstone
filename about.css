@@ -20,14 +20,193 @@ section {
     padding: 6rem 0;
 }
 
+.top-navbar ul{
+    background-color: #272A31;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: flex-end;
+    gap: 15px;
+    padding: 0.5% 13%;
+    align-items: center;
+}
+
+.top-navbar ul li {
+    cursor: pointer;
+}
+
+.container-intro-about {
+    background-image: url('imgs/Website-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.project-head-title-about {
+    color: red;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.project-desc-about {
+    font-weight: 700;
+    font-size: 3.5rem;
+
+}
+
+.project-paragraph-about p {
+    background: rgb(255, 255, 255);
+    border-radius: 0.4rem;
+    margin: 4rem 16rem;
+    padding: 2rem;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.project-title-about {
+    display: none;
+}
+
+/* SECTIOM TWO */
+
+.container-advertise {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4.5rem;
+    padding-bottom: 2rem;
+}
+
+.text-advertise {
+    text-align: center;
+    width: 40%;
+    font-weight: 200;
+}
+
+.text-advertise h2 {
+    font-size: 27px;
+}
+
+.line-advertise-program {
+    margin: 0 14rem;
+    border: 1px solid red;
+    margin-bottom: 25px;
+}
+
+.global-logo img {
+    width: 450px;
+    height: 200px;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 20px;
+    border: 1px solid rgb(219, 214, 214);
+    padding: 15px 80px;
+}
+
+/* SECTION THREE */
+
+.container-past-summits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top: 2px solid #848892;
+}
+
+.text-past-summits {
+    width: 45%;
+    margin-bottom: 28px;
+}
+
+.line-summit-program {
+    margin: 0 14rem;
+    border: 1px solid red;
+    margin-bottom: 25px;
+}
+
+.summits {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.past-years-summits-1  img {
+    width: 350px;
+    margin-right: 30px;
+    opacity: 0.7;
+}
+
+.past-years-summits-1 h3 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    color: white;
+}
+
+.past-years-summits-1 h3 > b {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.past-years-summits-2 img {
+    width: 350px;
+    opacity: 0.7;
+}
+
+.past-years-summits-2 h3 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    color: white;
+}
+
+.past-years-summits-2 h3 > b {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+
+/* FOOTER */
+
+.companies {
+    display: none;
+}
+
+.address-footer {
+    background-color: #272A31;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.address-footer img {
+    width: 22%;
+}
+
+.address-footer span {
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    padding-top: 3.2%;
+}
+
+
 /* MOBILE VERSION*/
 
 @media screen and (max-width: 768px) {
 
      /* FIRST SECTION */
 
-     .container-intro {
+    .container-intro-about {
         position: relative;
+        font-family: "Lato", sans-serif;
         margin-top: 0;
         background-image: url("imgs/Website-background.png");
         background-repeat: no-repeat;
@@ -35,31 +214,35 @@ section {
         padding: 15px;
     }
 
-    .project-head-title {
+    .project-head-title-about {
         font-size: 25px;
         color: crimson;
         padding-top: 4.8rem;
         text-align: center;
     }
 
-    .project-paragraph p {
+    .project-title-about {
+        display: block;
+    }
+
+    .project-paragraph-about p {
         border: solid 3px rgb(238, 228, 228);
         padding: 2px;
         margin: 30px auto;
         text-align: center;
-        text-justify: auto;
+        text-justify: center;
         background-color: white;
 
     }
 
-    .project-address h2 {
+    .project-address-about h2 {
         font-size: 35px;
         font-weight: bold;
         margin: 0 25px;
         text-align: center;
     }
 
-    .project-address address {
+    .project-address-about address {
         font-size: 15px;
         padding-bottom: 30px;
         text-align: center;
@@ -79,6 +262,13 @@ section {
     .text-advertise {
         text-align: center;
         font-weight: 200;
+        width: 80%;
+    }
+
+    .line-advertise-program {
+        margin: 0 8rem;
+        border: 1px solid red;
+        margin-bottom: 20px;
     }
 
     .global-logo img {
@@ -105,11 +295,15 @@ section {
         width: 85%;
     }
 
-    .line-main-program {
-        margin: 0 170px;
+    .line-summit-program {
+        margin: 0 10rem;
         border: red 1px solid;
-        align-content: center;
         margin-bottom: 15px;
+    }
+
+    .summits {
+        display: flex;
+        flex-direction: column;
     }
 
     .past-years-summits-1 , .past-years-summits-2 {
@@ -162,7 +356,8 @@ section {
     /* PARTNERS */
 
     .companies {
-        background-color: #272A31;   
+        background-color: #272A31;  
+        display: inline-block; 
     }
 
     .partners-company {
@@ -200,18 +395,19 @@ section {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 10%;
+        padding: 4%;
     }
 
     .address-footer img {
         background-color: #272A31;
-        width: 50%;
+        width: 40%;
         border-radius: 5%;
         margin-right: 6%;
     }
 
     .address-footer span {
         font-weight: 200;
+        font-size: 12px;
     }
 
 }
