@@ -1,5 +1,3 @@
-
-
 const speakersDetails = [
     {
         image:'imgs/Acuff.jpg',
@@ -73,7 +71,7 @@ seeMorebutton.innerHTML = 'MORE <img src="imgs/dropdown.png" alt="">';
 speakerslist.append(seeMorebutton);
 
 const seeLessbutton = document.createElement('div');
-seeLessbutton.classList.add('less more');
+seeLessbutton.classList.add('less');
 seeLessbutton.innerHTML = 'LESS <img src="imgs/dropdown.png" alt="">';
 speakerslist.append(seeLessbutton);
 seeLessbutton.style.display = 'none';

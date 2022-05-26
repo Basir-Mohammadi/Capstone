@@ -35,6 +35,62 @@ section {
     cursor: pointer;
 }
 
+nav .nav-container {
+    align-items: center;
+}
+
+.image-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.nav-menu li:hover {
+    background-color: royalblue;
+    padding: 5px;
+    border-radius: 5px;
+    transform: 0.5s ease;
+}
+
+.nav-menu li a:hover {
+    color: white;
+}
+
+.nav-menu .about , .cc-compagin {
+    color: #ee4c3a;
+   
+}
+
+.cc-compagin {
+    border: 2px solid #EC5242;
+    padding: 10px;
+}
+
+.cc-compagin:hover {
+    background-color: royalblue;
+    padding: 10px;
+}
+
+.nav-container img{
+    width: 80px;
+    margin-left: 25px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 15%;
+    padding-right: 13%;
+    align-items: center;
+}
+
+.menu-js .close-btn {
+    display: none;
+}
+
+
 .container-intro-about {
     background-image: url('imgs/Website-background.png');
     background-repeat: no-repeat;
@@ -202,6 +258,63 @@ section {
 
 @media screen and (max-width: 768px) {
 
+    /* NAVBAR */
+
+    .hamburger-btn .bar {
+        display: flex;
+        flex-direction: column;
+        width: 30px;
+        position: relative;
+        border: 3px solid #272A31;
+        margin-bottom: 5px;
+        z-index: 20;
+        top: 30px;
+        left: 25px;
+    }
+ 
+    .menu-js {
+        background-color: #3a3b3d;
+        z-index: 10;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        display: none;
+    }
+ 
+    .menu-js .close-btn {
+     display: block;
+     }
+    .menu-js button {
+      color: white;  
+     background-color: transparent;
+     position: absolute;
+     left: 30px;
+     width: 30px;
+     font-size: 40px;
+     top: 30px;
+    }
+ 
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        padding-right: 36%;
+        padding-top: 15%;
+    }
+ 
+    .image-nav ul li {
+        margin-bottom: 30%;
+    }
+ 
+    .nav-menu li a{
+        color: white;
+        font-size: 30px;
+        
+    }
+ 
+    .nav-menu li a:hover {
+         background-color: cadetblue;
+         cursor: pointer;
+    }
      /* FIRST SECTION */
 
     .container-intro-about {

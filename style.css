@@ -31,7 +31,7 @@ section {
     color: white;
     justify-content: flex-end;
     gap: 15px;
-    padding: 0.5% 13%;
+    padding: 0.9% 13%;
     align-items: center;
 }
 
@@ -40,7 +40,6 @@ section {
 }
 
 nav .nav-container {
-    /* position: absolute; */
     align-items: center;
 }
 
@@ -48,7 +47,7 @@ nav .nav-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 10px;
+    padding: 10px 0;
 }
 
 .nav-menu li:hover {
@@ -68,8 +67,8 @@ nav .nav-container {
 }
 
 .cc-compagin {
-    border: 4px solid #EC5242;
-    padding: 15px;
+    border: 2px solid #EC5242;
+    padding: 10px;
 }
 
 .cc-compagin:hover {
@@ -91,7 +90,7 @@ nav .nav-container {
     align-items: center;
 }
 
-button i {
+.menu-js .close-btn {
     display: none;
 }
 
@@ -323,43 +322,69 @@ button i {
        display: none;
    }
 
-   .humbergur-btn {
-       width: 20px;
-       background-color: #3c4049;
+   .hamburger-btn .bar {
+       display: flex;
+       flex-direction: column;
+       width: 30px;
+       position: relative;
+       border: 3px solid #272A31;
+       margin-bottom: 5px;
+       z-index: 20;
+       top: 30px;
+       left: 25px;
    }
 
-
-   .nav-menu {
-       z-index: 2;
+   .menu-js {
+       background-color: #3a3b3d;
+       z-index: 10;
        position: fixed;
        width: 100%;
        height: 100vh;
-       height: fit-content;
-       flex-direction: column;
-       background-color: #3c4049;
        display: none;
-       gap: 0;
    }
 
-   .nav-menu li {
-       width: 100%;
-       height: 4.5rem;
-       animation: 0.5s ease-in-out;
+   .menu-js .close-btn {
+    display: block;
+    }
+   .menu-js button {
+     color: white;  
+    background-color: transparent;
+    position: absolute;
+    left: 30px;
+    width: 30px;
+    font-size: 40px;
+    top: 30px;
    }
 
-   .nav-menu li a {
-    color: white;
-    place-items: center;
-    display: grid;
+   .nav-menu {
+       display: flex;
+       flex-direction: column;
+       padding-right: 36%;
+       padding-top: 15%;
    }
 
+   .image-nav ul li {
+       margin-bottom: 30%;
+   }
+
+   .nav-menu li a{
+       color: white;
+       font-size: 30px;
+       
+   }
+
+   .nav-menu li a:hover {
+        background-color: cadetblue;
+        cursor: pointer;
+   }
+
+  
     /* FIRST SECTION */
 
     .container-intro {
         position: relative;
         top: 0;
-        background-position-y: -45px;
-        padding: 15px;
+        padding-left: 15px;
     }
 
     .nav-container-bg {
@@ -380,7 +405,6 @@ button i {
     }
 
     .project-paragraph p {
-        /* background-color: white; */
         border: solid 1px rgb(238, 228, 228);
         padding: 2px;
         width: 95%;
@@ -475,6 +499,18 @@ button i {
     }
 
     .speakers > .more {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border: 1px solid wheat;
+        margin: 0 25px;
+        padding: 15px 0;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 5%;
+    }
+
+    .speakers > .less {
         display: flex;
         justify-content: center;
         text-align: center;

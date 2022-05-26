@@ -1,28 +1,25 @@
 
-// const nav_menu = document.querySelector ('.nav-menu');
-// const OpenBtn = document.querySelector('#open-menu-btn');
-// const CloseBtn = document.querySelector ('#close-menu-btn');
+const openBtn = document.querySelector ('.hamburger-btn');
+const navMenu = document.querySelector ('.menu-js');
+const CloseBtn =document.querySelector ('#close-btn');
+const links =document.querySelectorAll ('.link');
+
+openBtn.addEventListener ('click' , () =>{
+    navMenu.style.display = 'inline-block';
+    openBtn.style.display ='none';
+})
+
+CloseBtn.addEventListener ('click', () => {
+    navMenu.style.display ='none';
+    openBtn.style.display ='block';
+})
+
+links.forEach((link)=> {
+    link.addEventListener('click' , ()=>{
+        navMenu.style.display ='none';
+        openBtn.style.display ='block';
+    });
+}); 
 
 
-// OpenBtn.addEventListener('click' , () => {
-
-//     nav_menu.style.display ='flex';
-
-//     CloseBtn.style.display = 'inline-block';
-//     OpenBtn.style.display ='none';
-// })
-
-// const CloseNav = () => {
-//     nav_menu.style.display='none';
-
-//     CloseBtn.style.display ='none';
-//     OpenBtn.style.display ='inline-block';
-// }
-
-
-// CloseBtn.addEventListener ('click' , CloseNav);
-
-
-
-// MORE and LESS
 
