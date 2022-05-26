@@ -1,36 +1,69 @@
-# Capstone
-Capstone Project
-This is a capstone project. In this project I've used simple html and css firstly then Javascript to manipulations DOM. In this project I've used Javascript objects also.
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-Built With
-HTML
-CSS
-Javascript
-Getting Started
+# My_Portfolio
+
+> This is my first capstone project in module one in microverse.
+
+
+## Built With
+
+- HTML
+- CSS
+- linters
+- javascript
+- DOM
+
+## Live Demo (if available)
+
+[Capstone](https://basirking.github.io/Capstone/)
+
+
+
+
+
+## Getting Started
+
+*This is an example of how you may give instructions on setting up your project locally.*
+*Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.*
+
+
 To get a local copy up and running follow these simple example steps.
 
-Clone repository in your local machine
-git clone git@github.com:basirking/Capstone.git
+### Prerequisites
 
-open index.html in your browser.
-You can use live server.
-Live Demo
-Live Demo Link
+### Setup
 
-Author
-👤 Basir Mohammadi
+### Install
 
-GitHub: @githubhandle
-LinkedIn: LinkedIn
-🤝 Contributing
-Contributions, issues, and feature requests are welcome!
+### Usage
 
-Feel free to check the issues page.
+### Run tests
 
-Show your support
-Give a ⭐️ to Cindy Shin the author of the original design if you like this project!
+### Deployment
 
-Acknowledgments
-Hat tip to anyone whose code was used
-Inspiration
-etc
+
+
+## Authors
+
+👤 *Basir Mohammadi*
+
+- GitHub: [@basirking](https://github.com/basirking)
+
+
+
+
+
+
+## Show your support
+
+Give a ⭐ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
