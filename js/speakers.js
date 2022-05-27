@@ -3,17 +3,17 @@ const speakersDetails = [
         image:'imgs/Acuff.jpg',
         name:'Yochai Benkler',
         positioin:'Leadership Expert; Inc. Top 100 Leadership Speaker; New York Times Best-Selling Author',
-        background:'Founding Pastor, Fellowship Church; Founder & CEO, the Greatest Story, Inc.; President, Harambee Ministries;Board Member, Global Leadership Network; Author',
+        background:'Founding Pastor, Fellowship Church; Founder & CEO, the Greatest Story, Inc.',
     },    {
         image:'imgs/Stephanie-Chung.jpg',
         name:'Stephanie Chung',
-        positioin:'Chief Growth Officer, Wheels Up; Former President, JetSuite; Advisory Council, National Business Aviation Association',
-        background:'Chief Growth Officer, Wheels Up; Former President, JetSuite; Advisory Council, National Business Aviation Association',
+        positioin:'Chief Growth Officer, Wheels Up; ',
+        background:'Chief Growth Officer, Wheels Up  Founder & CEO;, the Greatest Story, Inc',
     },    {
         image:'imgs/Sahar-Hashemi.jpg',
         name:'Sahar Hasheni',
-        positioin:'Founder, Coffee Republic; Founder, Skinny Candy; Non-Executive Director, Scale Up Institute; Best-Selling Author',
-        background:'Founder, Coffee Republic; Founder, Skinny Candy; Non-Executive Director, Scale Up Institute; Best-Selling Author',
+        positioin:'Founder, Coffee Republic; Founder, Skinny Candy; Non-Executive Director.',
+        background:'Founder, Coffee Republic; Founder, Skinny Candy; Non-Executive Director.',
     },    {
         image:'imgs/Lynsi-Snyder.jpg',
         name:'Lynsi Snyder',
@@ -22,13 +22,13 @@ const speakersDetails = [
     },    {
         image:'imgs/Johnny-C-Taylor-Jr.jpg',
         name:'Johnny Taylor',
-        positioin:'President & CEO, SHRM, the Society for Human Resource Management; Former President & CEO, Thurgood Marshall College Fund; Best-Selling Author',
-        background:'President & CEO, SHRM, the Society for Human Resource Management; Former President & CEO, Thurgood Marshall College Fund; Best-Selling Author',
+        positioin:'President & CEO, SHRM, the Society for Human Resource Management.',
+        background:'President & CEO, SHRM.',
     },    {
         image:'imgs/Andy-Stanley-2022.jpg',
         name:'Andy Stanly',
-        positioin:'Founder & Pastor, North Point Ministries; Host, Your Move with Andy Stanley ; Best-Selling Author',
-        background:'Founder & Pastor, North Point Ministries; Host, Your Move with Andy Stanley ; Best-Selling Author',
+        positioin:'Founder & Pastor, North Point Ministries; Host',
+        background:'Founder & Pastor, North Point Ministries; Host.',
     },
 ]
 
@@ -87,7 +87,7 @@ more.addEventListener('click', () => {
 
 const less = document.querySelector('.less');
 less.addEventListener('click', () => {
-  speakerslist.innerHTML = speakerArr.slice(0, 2).join('');
+  speakerslist.innerHTML = speakerArr.slice(0, 3).join('');
   speakerslist.append(seeMorebutton);
   seeLessbutton.style.display = 'none';
   seeMorebutton.style.display = 'flex';

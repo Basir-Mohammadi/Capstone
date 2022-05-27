@@ -105,7 +105,8 @@ nav .nav-container {
 
 .project-desc-about {
   font-weight: 700;
-  font-size: 3.5rem;
+  line-height: 93%;
+  font-size: 2.5rem;
 }
 
 .project-paragraph-about p {

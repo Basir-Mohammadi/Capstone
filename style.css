@@ -110,6 +110,7 @@ nav .nav-container {
 
 .project-desc {
   font-size: 4.7rem;
+  line-height: 92%;
 }
 
 .project-paragraph p {
@@ -199,7 +200,7 @@ nav .nav-container {
 /* THIRD SECTION */
 
 .speakers {
-  background-color: #e9ecf1;
+  background-color: #eff2f7;
 }
 
 .speakers h3 {
@@ -214,7 +215,17 @@ nav .nav-container {
 }
 
 .speaker-image img {
-  width: 75px;
+  width: 95px;
+}
+
+.speaker-image {
+  background-image: url('imgs/blank-chess-board.gif');
+  background-position: top;
+  background-size: contain;
+  padding-left: 15px;
+  padding-top: 15px;
+  width: 80px;
+  height: 80px;
 }
 
 .all-left-right {
@@ -226,7 +237,8 @@ nav .nav-container {
 .speakers-details {
   display: flex;
   flex-direction: row;
-  margin-bottom: 30px;
+  margin-bottom: 62px;
+  gap: 4%;
 }
 
 .speakers-personal-details {
@@ -246,6 +258,10 @@ nav .nav-container {
 
 .more {
   display: none;
+}
+
+.right {
+  display: block;
 }
 
 /* FOOTER */
@@ -391,13 +407,13 @@ nav .nav-container {
   }
 
   .project-desc {
-    width: 99%;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .project-paragraph p {
     border: solid 1px rgb(238, 228, 228);
     padding: 2px;
+    background-color: transparent;
     width: 95%;
     margin: 30px auto;
     text-align: center;
@@ -439,7 +455,11 @@ nav .nav-container {
     display: flex;
     flex-direction: row;
     padding: 10px 0;
-    margin: 5px -50px;
+    margin: 5px -12px;
+  }
+
+  .program-details img {
+    padding-left: 2px;
   }
 
   .image-details {
@@ -468,6 +488,10 @@ nav .nav-container {
 
   .speakers {
     background-color: white;
+  }
+
+  .right {
+    display: none;
   }
 
   .speakers h3 {

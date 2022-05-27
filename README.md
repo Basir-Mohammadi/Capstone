@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# My_Portfolio
+# Capstone
 
 > This is my first capstone project in module one in microverse.
 
@@ -60,7 +60,7 @@ Give a ⭐ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
+- Original design by Cindy Shin in Behance
 - Inspiration
 - etc
 
